@@ -1,5 +1,25 @@
 public class Node {
-    // Represents nodes
-    char value;
-    Node next;
+
+    public char value;
+    public Node next;
+
+    public Node(char value, Node next){
+        this.value = value;
+        this.next = next;
+
+
+    }
+
+    public int length(Node head) {
+        int count = 0;
+
+        Node current = head;
+
+        while(current !=null){
+            count++;
+            current = current.next;
+
+        }
+        return count;
+    }
 }
