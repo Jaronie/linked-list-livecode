@@ -10,12 +10,12 @@ public class Node {
 
     }
 
-    public int length(Node head) {
+    public int length() {
         int count = 0;
 
-        Node current = head;
+        Node current = this;
 
-        while(current !=null){
+        while(current != null){
             count++;
             current = current.next;
 
