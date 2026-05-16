@@ -7,7 +7,7 @@ public class Practice {
         myNode.next = otherNode;
         otherNode.next = coolNode;
 
-        int numNodes = length(myNode);
+        int numNodes = myNode.length();
         System.out.println(numNodes);
 
         Node current = myNode;
@@ -17,18 +17,5 @@ public class Practice {
             current = current.next;
         }
 
-    }
-    public static int length(Node head){
-        int count = 0;
-
-        Node current = head;
-
-        while(current != null){
-            count++;
-            current = current.next;
-
-        }
-
-        return count;
     }
 }
